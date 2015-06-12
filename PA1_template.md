@@ -120,11 +120,11 @@ qplot(steps_daily)
 m11 <- mean(steps_daily, na.rm = TRUE)
 m12 <- median(steps_daily, na.rm = TRUE)
 cmp1 <- if(m1>m11) {"lower"} else {"higher"}
-cmp2 <- if(m2<m12) {"lower"} else {"higher"}
+cmp2 <- if(m2>m12) {"lower"} else {"higher"}
 ```
 
 The mean number of steps daily is 1.0766189\times 10^{4} and the median is 1.0766189\times 10^{4}.
-The mean is higher and the median is lower than before imputing missing values.
+The mean is higher and the median is higher than before imputing missing values.
 
 ## Are there differences in activity patterns between weekdays and weekends?
 

@@ -97,7 +97,7 @@ qplot(steps_daily)
 m11 <- mean(steps_daily, na.rm = TRUE)
 m12 <- median(steps_daily, na.rm = TRUE)
 cmp1 <- if(m1>m11) {"lower"} else {"higher"}
-cmp2 <- if(m2<m12) {"lower"} else {"higher"}
+cmp2 <- if(m2>m12) {"lower"} else {"higher"}
 ```
 
 The mean number of steps daily is `r m11` and the median is `r m12`.
